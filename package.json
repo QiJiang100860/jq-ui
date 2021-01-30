@@ -1,7 +1,7 @@
 {
   "name": "sy-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "main": "lib/sy-ui.common.js",
   "scripts": {
     "lib": "vue-cli-service build --target lib --name sy-ui --dest lib packages/index.js",

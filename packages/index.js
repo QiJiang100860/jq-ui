@@ -1,5 +1,5 @@
-import test from "./test";
-const components = [test];
+import SyWrapper from "./SyWrapper";
+const components = [SyWrapper];
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => {
@@ -12,6 +12,6 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 export default {
   install,
-  test
+  SyWrapper
 };
-export { test };
+export { SyWrapper };
