@@ -1,3 +1,3 @@
 import Vue from "vue";
-import CsWrapper from "../packages/CsWrapper";
-Vue.use(CsWrapper);
+import jqWrapper from "../packages/jqWrapper";
+Vue.use(jqWrapper);

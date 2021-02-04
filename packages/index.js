@@ -1,5 +1,5 @@
-import CsWrapper from "./CsWrapper";
-const components = [CsWrapper];
+import jqWrapper from "./jqWrapper";
+const components = [jqWrapper];
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => {
@@ -12,6 +12,6 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 export default {
   install,
-  CsWrapper
+  jqWrapper
 };
-export { CsWrapper };
+export { jqWrapper };

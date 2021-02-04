@@ -1,10 +1,10 @@
 {
-  "name": "c-s",
-  "version": "0.1.0",
+  "name": "jq-ui",
+  "version": "0.1.2",
   "private": false,
-  "main": "lib/sy-ui.common.js",
+  "main": "lib/jq-ui.common.js",
   "scripts": {
-    "lib": "vue-cli-service build --target lib --name sy-ui --dest lib packages/index.js",
+    "lib": "vue-cli-service build --target lib --name jq-ui --dest lib packages/index.js",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",

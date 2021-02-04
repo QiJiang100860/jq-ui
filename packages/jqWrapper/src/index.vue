@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "CsWrapper",
+  name: "jqWrapper",
   props: {
     theme: {
       default: "#08A1A4",
