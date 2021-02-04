@@ -1,5 +1,6 @@
 const path = require("path");
 module.exports = {
+  publicPath:"./",
   // 修改默认的入口
   pages: {
     index: {
