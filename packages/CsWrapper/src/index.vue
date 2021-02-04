@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "SyWrapper",
+  name: "CsWrapper",
   props: {
     theme: {
       default: "#08A1A4",

@@ -1,7 +1,5 @@
-import SyWrapper from "./SyWrapper";
-import SyNodata from "./SyNodata";
-import SyMap from "./SyMap";
-const components = [SyWrapper, SyNodata, SyMap];
+import CsWrapper from "./CsWrapper";
+const components = [CsWrapper];
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => {
@@ -14,6 +12,6 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 export default {
   install,
-  SyWrapper
+  CsWrapper
 };
-export { SyWrapper };
+export { CsWrapper };
