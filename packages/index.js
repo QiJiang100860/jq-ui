@@ -1,5 +1,7 @@
 import SyWrapper from "./SyWrapper";
-const components = [SyWrapper];
+import SyNodata from "./SyNodata";
+import SyMap from "./SyMap";
+const components = [SyWrapper, SyNodata, SyMap];
 const install = function(Vue) {
   if (install.installed) return;
   components.map(component => {
