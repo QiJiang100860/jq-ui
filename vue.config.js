@@ -1,12 +1,17 @@
 const path = require("path");
 module.exports = {
-  publicPath:"./",
+  publicPath: "./",
   // 修改默认的入口
   pages: {
     index: {
       entry: "examples/main.js",
       template: "public/index.html",
       filename: "index.html"
+    }
+  },
+  configureWebpack: config => {
+    if (process.env.NODE_ENV === "production") {
+      config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true;
     }
   },
   chainWebpack: config => {
