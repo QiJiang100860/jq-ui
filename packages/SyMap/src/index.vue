@@ -16,15 +16,18 @@ export default {
       const map = this.$loadMap;
       if (!map) {
         // 如果没有地图去执行地图加载器
-        new LMap({
-          url: "https://api.map.baidu.com/getscript",
-          version: "3.0",
-          key: "9kXK8VjQdjC7KUnKdpSoEbfpVcEe2RHo",
-          lib: {
-            url: "https://api.map.baidu.com/library/",
-            version: "1.2"
-          }
-        });
+        new LMap(
+          {
+            url: "https://api.map.baidu.com/getscript",
+            version: "3.0",
+            key: "9kXK8VjQdjC7KUnKdpSoEbfpVcEe2RHo",
+            lib: {
+              url: "https://api.map.baidu.com/library/",
+              version: "1.2"
+            }
+          },
+          Vue
+        );
         this.loadmap();
       } else {
         this.loadSuccess();

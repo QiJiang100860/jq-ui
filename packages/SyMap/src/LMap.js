@@ -1,7 +1,7 @@
-import vue from "vue";
 export default class LMap {
-  constructor(option) {
+  constructor(option, ctx) {
     this.option = option;
+    this.ctx = ctx;
     this.url = "";
     this.version = "";
     this.key = "";
@@ -94,6 +94,6 @@ export default class LMap {
     });
   }
   register() {
-    vue.prototype.$loadMap = this.load.bind(this);
+    this.ctx.prototype.$loadMap = this.load.bind(this);
   }
 }
