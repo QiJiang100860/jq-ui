@@ -11,7 +11,7 @@ const routes = [
   {
     path: "/home",
     name: "Home",
-    component: () => import("@/views/Home/")
+    component: () => import("@/views/Home/indexmap.vue")
   }
 ];
 
