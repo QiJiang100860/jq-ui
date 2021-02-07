@@ -1,6 +1,7 @@
 import jqWrapper from "./jqWrapper";
-const components = [jqWrapper];
-const install = function(Vue) {
+import jqLayout from "./jqLayout";
+const components = [jqWrapper, jqLayout];
+const install = function (Vue) {
   if (install.installed) return;
   components.map(component => {
     Vue.use(component);
@@ -12,6 +13,7 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 export default {
   install,
-  jqWrapper
+  jqWrapper,
+  jqLayout
 };
-export { jqWrapper };
+export { jqWrapper, jqLayout };

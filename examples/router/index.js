@@ -1,19 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
 Vue.use(VueRouter);
 
+import cRoute from "./routes/const"
+import pRoute from "./routes/permission"
 const routes = [
   {
     path: "/",
     redirect: "/home"
   },
+  ...cRoute.data,
+  ...pRoute.data,
   {
-    path: "/home",
-    name: "Home",
-    component: () => import("@/views/Home/indexmap.vue")
+    path: "*",
+    redirect: "/404"
   }
 ];
+
 
 const router = new VueRouter({
   routes
