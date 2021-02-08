@@ -1,4 +1,3 @@
-import vue from 'vue';
 export default class LMap {
   constructor(option) {
     this.option = option;
@@ -36,7 +35,7 @@ export default class LMap {
   }
   // 拼接主要脚本请求
   pingMainUrl() {
-    this.mainUrl = `${this.url}?type=webgl&v=${this.version}&ak=${this.key}`;
+    this.mainUrl = `${this.url}?type=webglv=${this.version}&ak=${this.key}`;
   }
   // 拼装副脚本请求
   pingLibUrl(option) {
@@ -57,7 +56,7 @@ export default class LMap {
   // 插入脚本
   insertScript(script) {
     return (function(script) {
-      return new Promise((s) => {
+      return new Promise(s => {
         const head = document.head;
         ``;
         head.appendChild(script);
@@ -85,15 +84,15 @@ export default class LMap {
     // 1、创建主脚本对象
     // 2、创建副脚本对象
     const _promise = this.createPromise([this.mainUrl, ...this.libUrls]);
-    return new Promise((s) => {
+    return new Promise(s => {
       Promise.all(_promise).then(() => {
-        const BMap = window.BMap || window.BMapGL;
-        const BMapLib = window.BMapLib;
+        const BMap = window.BMap;
+        const BMapLib = window.BMapLib || window.BMapGL;
         s({ BMap, BMapLib });
       });
     });
   }
   register() {
-    vue.prototype.$loadMap = this.load.bind(this);
+    window.$$jqloadMap = this.load.bind(this);
   }
 }

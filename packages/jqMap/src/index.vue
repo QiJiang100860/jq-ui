@@ -5,15 +5,14 @@
 </template>
 <script>
 import LMap from './LMap.js';
-import Vue from 'vue';
 export default {
-  name: 'MapLoader',
+  name: 'jqMap',
   mounted() {
     this.initMapClass();
   },
   methods: {
     initMapClass() {
-      const map = this.$loadMap;
+      const map = window.$$jqloadMap;
       if (!map) {
         // 如果没有地图去执行地图加载器
         new LMap({
@@ -31,8 +30,8 @@ export default {
       }
     },
     async loadmap() {
-      await this.$loadMap().then(({ BMap }) => {
-        Vue.prototype.$$Global_MAP = BMap;
+      await window.$$jqloadMap().then(({ BMap }) => {
+        window.$$Global_MAP = BMap;
         this.loadSuccess();
       });
     },

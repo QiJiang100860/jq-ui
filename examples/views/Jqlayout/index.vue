@@ -56,6 +56,15 @@
         <template slot="content">3</template>
       </jq-layout>
     </div>
+
+    <div style="width: 800px; height: 600px">
+      <jq-layout mold="hrlf" :hh="20" :lw="120">
+        <template slot="header">top</template>
+        <template slot="meau">2</template>
+        <template slot="content">3</template>
+        <template slot="footer">4</template>
+      </jq-layout>
+    </div>
   </div>
 </template>
 

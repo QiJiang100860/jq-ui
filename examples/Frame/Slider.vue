@@ -26,11 +26,14 @@ export default {
   },
   methods: {
     jumpTo(index, cindex) {
+      const croute = this.$route.path;
       const { data } = this.route;
       const _path = data[index].path;
       const _cpath = data[index].children[cindex].path;
       const path = `${_path}/${_cpath}`;
-      this.$router.push(path);
+      if (croute !== path) {
+        this.$router.push(path);
+      }
     },
   },
 };

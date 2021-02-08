@@ -1,6 +1,7 @@
 import jqWrapper from "./jqWrapper";
 import jqLayout from "./jqLayout";
-const components = [jqWrapper, jqLayout];
+import jqMap from "./jqMap";
+const components = [jqWrapper, jqLayout, jqMap];
 const install = function (Vue) {
   if (install.installed) return;
   components.map(component => {
@@ -14,6 +15,7 @@ if (typeof window !== "undefined" && window.Vue) {
 export default {
   install,
   jqWrapper,
-  jqLayout
+  jqLayout,
+  jqMap
 };
 export { jqWrapper, jqLayout };

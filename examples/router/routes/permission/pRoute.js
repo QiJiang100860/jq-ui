@@ -1,7 +1,7 @@
 // 权限菜单路由
 import Frame from "@/Frame"
 export default {
-    decp: "权限菜单路由",
+    decp: "UI组件菜单路由",
     data: [
         {
             path: "/frame",

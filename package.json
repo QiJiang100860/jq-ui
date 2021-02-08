@@ -1,6 +1,6 @@
 {
   "name": "jq-ui",
-  "version": "0.1.2",
+  "version": "0.1.4",
   "private": false,
   "main": "lib/jq-ui.common.js",
   "scripts": {
