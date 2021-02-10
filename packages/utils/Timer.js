@@ -3,6 +3,6 @@ export default class Timer {
         this.init()
     }
     init(){
-        console.log("第一个实体类test")
+        console.log("timer 实现时间得相关业务通用功能")
     }
 }

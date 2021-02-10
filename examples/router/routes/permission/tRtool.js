@@ -8,7 +8,7 @@ export default {
             name: "Frame",
             component: Frame,
             meta:{
-                title:"工具脚本",
+                title:"工具类jqUtil",
             },
             children: [
                 {

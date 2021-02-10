@@ -2,7 +2,7 @@ import jqWrapper from "./jqWrapper";
 import jqLayout from "./jqLayout";
 import jqMap from "./jqMap";
 import jqEcharts from "./jqEcharts";
-import * as jqUtil from "./utils/index.js"
+import jqUtil from "./utils/index.js"
 const components = [jqWrapper, jqLayout, jqMap, jqEcharts];
 const install = function (Vue) {
   if (install.installed) return;

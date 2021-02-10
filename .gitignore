@@ -23,10 +23,10 @@ pnpm-debug.log*
 *.sln
 *.sw?
 
-# examples/
-# packages/
-# public/
-# vue.config.js
-# postcss.config.js
-# babel.config.js
-# *.map
+examples/
+packages/
+public/
+vue.config.js
+postcss.config.js
+babel.config.js
+*.map
