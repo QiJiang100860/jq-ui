@@ -1,7 +1,9 @@
 import jqWrapper from "./jqWrapper";
 import jqLayout from "./jqLayout";
 import jqMap from "./jqMap";
-const components = [jqWrapper, jqLayout, jqMap];
+import jqEcharts from "./jqEcharts";
+import * as jqUtil from "./utils/index.js"
+const components = [jqWrapper, jqLayout, jqMap, jqEcharts];
 const install = function (Vue) {
   if (install.installed) return;
   components.map(component => {
@@ -14,8 +16,11 @@ if (typeof window !== "undefined" && window.Vue) {
 }
 export default {
   install,
+  jqUtil, //自定组件工具包
   jqWrapper,
   jqLayout,
-  jqMap
+  jqMap,
+  jqEcharts,
+
 };
-export { jqWrapper, jqLayout };
+export { jqWrapper, jqLayout, jqMap, jqEcharts, jqUtil };

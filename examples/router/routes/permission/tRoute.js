@@ -26,6 +26,14 @@ export default {
                     meta:{
                         title:"echarts加载器",
                     }
+                },
+                {
+                    path: "jqImgload",
+                    name: "JqImgload",
+                    component: () => import("@/views/JqImgload"),
+                    meta:{
+                        title:"图片上传",
+                    }
                 }
             ]
         },
