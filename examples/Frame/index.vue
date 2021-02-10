@@ -1,6 +1,6 @@
 <template>
   <div class="frame">
-    <jq-layout :hh="60" :lw="120" mold="hlr">
+    <jq-layout :hh="60" :lw="120" mold="hlrf">
       <template slot="header">
         <f-header></f-header>
       </template>
@@ -13,7 +13,9 @@
         </div>
       </template>
       <template slot="footer">
-        <div>footer</div>
+        <div class="footer-content">
+          <span>© 2021-2022 #JQ#18710609128 版权所有</span>
+        </div>
       </template>
     </jq-layout>
   </div>
@@ -33,10 +35,20 @@ export default {
   width: 100%;
   height: 100%;
 }
-.mian-content{
+.mian-content {
   width: 100%;
   height: 100%;
   background: #eee;
-  padding:10px;
+  padding: 10px;
+}
+.footer-content {
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #fff;
 }
 </style>

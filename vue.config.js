@@ -1,5 +1,10 @@
 const path = require("path");
 module.exports = {
+  // 暂时取消sockjs-client得报错
+  devServer: {
+    proxy: 'http://localhost:8080',
+    public: 'localhost:8080'  // 本地ip
+  },
   publicPath: "./",
   // 修改默认的入口
   pages: {

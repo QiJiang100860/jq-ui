@@ -34,6 +34,14 @@ export default {
                     meta:{
                         title:"布局器",
                     }
+                },
+                {
+                    path: "jqIcon",
+                    name: "JqIcon",
+                    component: () => import("@/views/JqIcon"),
+                    meta:{
+                        title:"图标",
+                    }
                 }
             ]
         },
