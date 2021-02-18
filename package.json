@@ -8,8 +8,16 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit",
-    "precommit": "lint-staged"
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -34,11 +42,5 @@
     "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
-  },
-  "lint-staged": {
-    "jq-ui/**/*.{js,json,css,vue}": [
-     "eslint --fix",
-     "git add"
-    ]
   }
 }
