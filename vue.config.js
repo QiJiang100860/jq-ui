@@ -1,5 +1,6 @@
 const path = require("path");
 module.exports = {
+  lintOnSave:process.env.NODE_ENV !== "production",
   // 暂时取消sockjs-client得报错
   devServer: {
     proxy: 'http://localhost:8080',
