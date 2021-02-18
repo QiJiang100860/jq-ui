@@ -36,7 +36,7 @@
     "vue-template-compiler": "^2.6.11"
   },
   "lint-staged": {
-    "src/**/*.{js,json,css,vue}": [
+    "jq-ui/**/*.{js,json,css,vue}": [
      "eslint --fix",
      "git add"
     ]
