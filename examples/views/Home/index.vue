@@ -7,7 +7,7 @@
 
     <div class="letter">
       <div class="letter-card" :class="open ? 'active' : ''">
-        <span class="title">牛</span>
+        <span class="title">免</span>
         <div class="decp">
           【JQ】<span style="color: #ff0000">*vue开发深度总结</span
           >，欢迎使用我，对我得多多得支持，我会努力得更新出好多东西哦<span
@@ -23,7 +23,7 @@
         </div>
       </div>
       <div class="letter-card" :class="open ? 'active' : ''">
-        <span class="title">年</span>
+        <span class="title">费</span>
         <div class="decp">
           【jq-ui】<span style="color: #ff0000">*vue开发效率提升神器</span
           >，让你事半功倍，让你欲罢不能<span
@@ -39,7 +39,7 @@
         </div>
       </div>
       <div class="letter-card" :class="open ? 'active' : ''">
-        <span class="title">大</span>
+        <span class="title">广</span>
         <div class="decp">
           【jq-ui】<span style="color: #ff0000">*通用解决方案</span
           >，欢迎使用我，对我得多多得支持，我会努力得更新出好多东西哦<span
@@ -55,7 +55,7 @@
         </div>
       </div>
       <div class="letter-card" :class="open ? 'active' : ''">
-        <span class="title">吉</span>
+        <span class="title">告</span>
         <div class="decp">
           【jq-ui】<span style="color: #ff0000">*新年快乐</span
           >，欢迎使用我，对我得多多得支持，我会努力得更新出好多东西哦<span
@@ -78,7 +78,7 @@
 export default {
   data() {
     return {
-      open: false,
+      open: false
     };
   },
   methods: {
@@ -97,8 +97,8 @@ export default {
     goAlert() {
       alert("最后再啰嗦下，祝您新年快乐，红包多多");
       this.$router.push("/frame/jqecharts");
-    },
-  },
+    }
+  }
 };
 </script>
 

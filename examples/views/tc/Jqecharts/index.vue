@@ -28,7 +28,7 @@ export default {
     return {
       chart3Option: {},
       chart4Option: {},
-      chart4Loading: true,
+      chart4Loading: true
     };
   },
   beforeMount() {
@@ -44,8 +44,8 @@ export default {
         this.chart4Option = testOption.chart4;
         this.chart4Loading = !this.chart4Loading;
       }, 3000);
-    },
-  },
+    }
+  }
 };
 </script>
 

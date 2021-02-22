@@ -2,7 +2,7 @@
   <div class="f-header">
     <div class="left" @click="tohome">
       <span class="logo">JQ</span>
-      <span class="title">提高开发效率得enmmmm</span>
+      <span class="title">Jquery? no! I`m not</span>
     </div>
     <div class="right">
       <div class="time">持续更新中</div>
@@ -16,8 +16,8 @@ export default {
   methods: {
     tohome() {
       this.$router.push("/");
-    },
-  },
+    }
+  }
 };
 </script>
 

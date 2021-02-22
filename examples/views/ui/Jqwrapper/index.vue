@@ -18,7 +18,6 @@
       <div class="item">
         <jq-wrapper theme="#ff0000">好用真好用好用真好用好用真好用</jq-wrapper>
       </div>
-      
     </div>
   </div>
 </template>
@@ -28,8 +27,8 @@ export default {
   methods: {
     emitMore() {
       alert("jq-ui真好用");
-    },
-  },
+    }
+  }
 };
 </script>
 

@@ -6,19 +6,6 @@
       </div>
       <div style="text-align: center">{{ item.font_class }}</div>
     </div>
-    <div class="item-contemt" v-for="(item, index) in icons" :key="index">
-      <div style="text-align: center">
-        <jq-icon :name="item.font_class"></jq-icon>
-      </div>
-      <div style="text-align: center">{{ item.font_class }}</div>
-    </div>
-
-    <div class="item-contemt" v-for="(item, index) in icons" :key="index">
-      <div style="text-align: center">
-        <jq-icon :name="item.font_class"></jq-icon>
-      </div>
-      <div style="text-align: center">{{ item.font_class }}</div>
-    </div>
   </div>
 </template>
 
