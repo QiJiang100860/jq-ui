@@ -1,14 +1,14 @@
 export default class LMap {
   constructor(option) {
     this.option = option;
-    this.url = '';
-    this.version = '';
-    this.key = '';
-    this._libUrl = '';
-    this._libVersion = '';
+    this.url = "";
+    this.version = "";
+    this.key = "";
+    this._libUrl = "";
+    this._libVersion = "";
     this.libs = [];
 
-    this.mainUrl = '';
+    this.mainUrl = "";
     this.libUrls = [];
 
     this.init();
@@ -28,10 +28,10 @@ export default class LMap {
     const _libUrl = lib.url;
     const _libVersion = lib.version;
     this.url = url;
-    this.version = version || '3.0';
-    this.key = key || '9kXK8VjQdjC7KUnKdpSoEbfpVcEe2RHo';
+    this.version = version || "3.0";
+    this.key = key || "9kXK8VjQdjC7KUnKdpSoEbfpVcEe2RHo";
     this._libUrl = _libUrl;
-    this._libVersion = _libVersion || '1.2';
+    this._libVersion = _libVersion || "1.2";
   }
   // 拼接主要脚本请求
   pingMainUrl() {
@@ -46,10 +46,10 @@ export default class LMap {
 
   // 创建脚本
   createScript(url) {
-    const script = document.createElement('script');
+    const script = document.createElement("script");
     script.src = url;
-    script.type = 'text/javascript';
-    script.setAttribute('defer', true);
+    script.type = "text/javascript";
+    script.setAttribute("defer", true);
     return script;
   }
 

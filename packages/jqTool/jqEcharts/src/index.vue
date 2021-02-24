@@ -19,49 +19,49 @@ export default {
           title: { text: "option默认柱状图" },
           tooltip: {},
           xAxis: {
-            data: ["java", "node", "js", "py", "vue", "rn"],
+            data: ["java", "node", "js", "py", "vue", "rn"]
           },
           yAxis: {},
           series: [
             {
               name: "销量",
               type: "bar",
-              data: [5, 20, 36, 10, 10, 20],
-            },
-          ],
+              data: [5, 20, 36, 10, 10, 20]
+            }
+          ]
         };
-      },
+      }
     },
     cKey: {
       type: String,
       default: () => {
         return new Date().getTime() + "";
-      },
+      }
     },
     width: {
       type: Number,
-      default: 300,
+      default: 300
     },
     height: {
       type: Number,
-      default: 300,
+      default: 300
     },
     loading: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   data() {
     return {
       echarts: null,
       echartsCtx: null,
-      chartsWrapperStyle: {},
+      chartsWrapperStyle: {}
     };
   },
   created() {
     this.chartsWrapperStyle = {
       width: this.width + "px",
-      height: this.height + "px",
+      height: this.height + "px"
     };
   },
   mounted() {
@@ -77,7 +77,7 @@ export default {
           _this.render();
           _this.eConsole();
           _this.resize();
-        },
+        }
       });
     });
   },
@@ -93,7 +93,7 @@ export default {
       const _this = this;
       window.addEventListener(
         "resize",
-        _.debounce(function () {
+        _.debounce(function() {
           _this.echartsCtx.resize();
         }, 200)
       );
@@ -118,12 +118,12 @@ export default {
       this.echartsCtx.showLoading({
         text: "数据正在努力加载...",
         textStyle: { fontSize: 30, color: "#444" },
-        effectOption: { backgroundColor: "rgba(0, 0, 0, .3)" },
+        effectOption: { backgroundColor: "rgba(0, 0, 0, .3)" }
       });
     },
     hideLoading() {
       this.echartsCtx.hideLoading();
-    },
+    }
   },
 
   watch: {
@@ -139,11 +139,10 @@ export default {
       handler(n) {
         this.render(n);
       },
-      deep: true,
-    },
-  },
+      deep: true
+    }
+  }
 };
 </script>
 
-<style lang="less" scoped>
-</style>
+<style lang="less" scoped></style>

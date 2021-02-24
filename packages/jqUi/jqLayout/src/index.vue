@@ -23,31 +23,31 @@ export default {
   props: {
     mold: {
       default: "hlrf",
-      type: String,
+      type: String
     },
     // 左宽
     lw: {
       default: 200,
-      type: Number,
+      type: Number
     },
     // 头高
     hh: {
       default: 80,
-      type: Number,
+      type: Number
     },
     // 脚高
     fh: {
       default: 40,
-      type: Number,
-    },
+      type: Number
+    }
   },
   data() {
     return {
       shh: null,
       slw: null,
-      srw:null,
+      srw: null,
       sch: null,
-      sfh: null,
+      sfh: null
     };
   },
   created() {
@@ -57,17 +57,17 @@ export default {
     init() {
       // 头高
       this.shh = {
-        height: `${this.hh}px`,
+        height: `${this.hh}px`
       };
       // 左宽
       this.slw = {
-        width: `${this.lw}px`,
+        width: `${this.lw}px`
       };
 
       // 右宽
       this.srw = {
         width: `calc(100% - ${this.lw}px)`
-      }
+      };
 
       // 容器高
       let height = 0;
@@ -78,14 +78,14 @@ export default {
         height += this.fh;
       }
       this.sch = {
-        height: `calc(100% - ${height}px)`,
+        height: `calc(100% - ${height}px)`
       };
 
       // 脚高
       this.sfh = {
-        height: `${this.fh}px`,
+        height: `${this.fh}px`
       };
-    },
+    }
   },
   computed: {
     hasHeader() {
@@ -99,13 +99,13 @@ export default {
     },
     hasFooter() {
       return this.mold.indexOf("f") >= 0;
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="less" scoped>
-*{
+* {
   box-sizing: border-box;
 }
 .jq-scrollbar__wrapper {

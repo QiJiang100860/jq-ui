@@ -9,34 +9,35 @@ export default {
   props: {
     name: {
       type: String,
-      default: "yooxi",
-    },
+      default: "yooxi"
+    }
   },
   data() {
     return {
-      icons: icons.glyphs,
+      icons: icons.glyphs
     };
   },
   created() {},
   methods: {
     evelIcon(name) {
-      const _icons = this.icons.map((item) => item.font_class);
+      const _icons = this.icons.map(item => item.font_class);
       const _j = _icons.includes(name);
       return _j ? name : "yooxi";
-    },
-  },
+    }
+  }
 };
 </script>
 
 <style lang="less" scoped>
 @font-face {
-  font-family: 'jconfont';  /* project id 2372223 */
-  src: url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.eot');
-  src: url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.eot?#iefix') format('embedded-opentype'),
-  url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.woff2') format('woff2'),
-  url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.woff') format('woff'),
-  url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.ttf') format('truetype'),
-  url('//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.svg#jconfont') format('svg');
+  font-family: "jconfont"; /* project id 2372223 */
+  src: url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.eot");
+  src: url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.eot?#iefix")
+      format("embedded-opentype"),
+    url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.woff2") format("woff2"),
+    url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.woff") format("woff"),
+    url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.ttf") format("truetype"),
+    url("//at.alicdn.com/t/font_2372223_s0vmn6mqz8s.svg#jconfont") format("svg");
 }
 
 .jconfont {
