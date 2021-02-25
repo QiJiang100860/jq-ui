@@ -1,11 +1,9 @@
 import Vue from "vue";
-import jqWrapper from "~/jqWrapper";
-import jqLayout from "~/jqLayout";
-import jqMap from "~/jqMap";
-import jqEcharts from "~/jqEcharts";
-import jqIcon from "~/jqIcon";
-Vue.use(jqWrapper);
-Vue.use(jqLayout);
-Vue.use(jqMap);
-Vue.use(jqEcharts);
-Vue.use(jqIcon);
+import jq from "~";
+const { jqUtil } = jq;
+
+// 注册组件
+Vue.use(jq);
+
+// 注册脚本
+Vue.prototype.$jq = jqUtil;

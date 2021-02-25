@@ -1,26 +1,33 @@
-import jqWrapper from "./jqWrapper";
-import jqLayout from "./jqLayout";
-import jqMap from "./jqMap";
-import jqEcharts from "./jqEcharts";
-import jqUtil from "./jqUtils/index.js"
-const components = [jqWrapper, jqLayout, jqMap, jqEcharts];
-const install = function (Vue) {
+// 组件
+import jqTool from "./jqTool";
+import jqUi from "./jqUi";
+
+// 指令
+import jqDir from "./jqDir";
+
+// 工具包
+import jqUtil from "./jqUtils";
+
+const cAndD = Object.assign({}, jqUi, jqDir, jqTool);
+
+const install = function(Vue) {
   if (install.installed) return;
-  components.map(component => {
-    Vue.use(component);
-  });
+  for (let key in cAndD) {
+    const item = cAndD[key];
+    Vue.use(item);
+  }
 };
 //  全局引用可自动安装
 if (typeof window !== "undefined" && window.Vue) {
   install(window.Vue);
 }
-export default {
-  install,
-  jqUtil, //自定组件工具包
-  jqWrapper,
-  jqLayout,
-  jqMap,
-  jqEcharts,
 
-};
-export { jqWrapper, jqLayout, jqMap, jqEcharts, jqUtil };
+const exportLibs = Object.assign(
+  {
+    install,
+    jqUtil //自定组件工具包
+  },
+  cAndD
+);
+
+export default exportLibs;
