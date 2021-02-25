@@ -26,6 +26,14 @@ export default {
           meta: {
             title: "图片预览"
           }
+        },
+        {
+          path: "dircopy",
+          name: "Jqcopy",
+          component: () => import("@/views/dir/jqCopy"),
+          meta: {
+            title: "一键复制"
+          }
         }
       ]
     }
