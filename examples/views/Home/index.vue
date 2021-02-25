@@ -150,6 +150,12 @@ export default {
     justify-content: center;
 
     .letter-card {
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
       display: inline-block;
       width: 150px;
       height: 200px;
