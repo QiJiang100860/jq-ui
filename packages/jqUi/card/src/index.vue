@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: "jqWrapper",
+  name: "jqCard",
   props: {
     theme: {
       default: "#08A1A4",

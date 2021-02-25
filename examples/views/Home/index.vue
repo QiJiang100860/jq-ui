@@ -89,7 +89,7 @@ export default {
       this.open = !this.open;
     },
     goHome() {
-      this.$router.push("/frame/jqwrapper");
+      this.$router.push("/frame/jqcard");
     },
     goTool() {
       this.$router.push("/frame/jqmap");

@@ -1,7 +1,7 @@
-import jqEcharts from "./jqEcharts";
-import jqMap from "./jqMap";
+import echarts from "./echarts";
+import map from "./map";
 
 export default {
-  jqEcharts,
-  jqMap
+  echarts,
+  map
 };

@@ -1,11 +1,11 @@
-import jqDev from "./jqDev";
-import jqIcon from "./jqIcon";
-import jqLayout from "./jqLayout";
-import jqWrapper from "./jqWrapper";
+import dev from "./dev";
+import icon from "./icon";
+import layout from "./layout";
+import card from "./card";
 
 export default {
-  jqDev,
-  jqIcon,
-  jqLayout,
-  jqWrapper
+  dev,
+  icon,
+  layout,
+  card
 };

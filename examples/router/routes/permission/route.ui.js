@@ -20,9 +20,9 @@ export default {
           }
         },
         {
-          path: "jqwrapper",
-          name: "Jqwrapper",
-          component: () => import("@/views/ui/Jqwrapper"),
+          path: "jqcard",
+          name: "JqCard",
+          component: () => import("@/views/ui/JqCard"),
           meta: {
             title: "卡片"
           }
