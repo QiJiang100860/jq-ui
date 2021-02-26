@@ -1,4 +1,4 @@
-![avatar](./logo.png#pic_center =60x60)
+![avatar](./logo.png #pic_center =60x60)
 ### jq-ui简介
 ***
 很感谢你能在茫茫的网络世界发现__jq-ui__，首先我不是jQuery,也和它没有任何关系，这个项目是在工作之余自己**总结**和**归纳**的通用问题的解决方案，希望能和大家一起分享，也希望能得到大家的支持。同时很感觉和我一起奋战的兄弟，也随时欢迎大家提出Issues。[欢迎批判](https://qijiang100860.github.io/jq-ui/)
