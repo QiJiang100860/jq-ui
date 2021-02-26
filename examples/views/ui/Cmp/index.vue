@@ -1,7 +1,25 @@
 <template>
-  <div>
-    组件调试模板
+  <div class="info-wrapper">
+    <div class="markdown-body" v-html="md"></div>
   </div>
 </template>
 
-<style lang="less" scoped></style>
+<script>
+import md from "./README.md";
+export default {
+  data() {
+    return {
+      md: md
+    };
+  },
+  mounted() {},
+  methods: {}
+};
+</script>
+
+<style lang="less" scoped>
+.info-wrapper {
+  background: #fff;
+  padding: 20px;
+}
+</style>

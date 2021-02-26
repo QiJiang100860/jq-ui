@@ -46,5 +46,14 @@ module.exports = {
         // 修改它的选项...
         return options;
       });
+
+    config.module
+      .rule("md")
+      .test(/\.md/)
+      .use("html-loader")
+      .loader("html-loader")
+      .end()
+      .use("markdown-loader")
+      .loader("markdown-loader");
   }
 };
